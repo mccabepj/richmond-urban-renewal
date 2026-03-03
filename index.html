@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richmond Sanborn Historical Buildings</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="map"></div>
+  <div id="controls">
+    <h2>Richmond Sanborn</h2>
+
+    <div class="control-group">
+      <label>Basemap</label>
+      <div class="button-group">
+        <button class="basemap-btn active" data-basemap="osm">Street</button>
+        <button class="basemap-btn" data-basemap="satellite">Satellite</button>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label>Layers</label>
+      <div class="layer-toggle">
+        <input type="checkbox" id="toggle-structures" checked />
+        <label for="toggle-structures">Structures</label>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label>Legend</label>
+      <div class="legend-item">
+        <div class="legend-swatch" style="background:#a89f91; border: 2px solid #e74c3c;"></div>
+        <span class="legend-label">Digitized Structure (PM)</span>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://unpkg.com/maplibre-gl@4.1.2/dist/maplibre-gl.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

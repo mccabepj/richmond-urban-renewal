@@ -1,0 +1,39 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; height: 100vh; overflow: hidden; }
+#map { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+#controls {
+  position: absolute; top: 16px; left: 16px;
+  background: rgba(255,255,255,0.96); border-radius: 8px;
+  padding: 16px; width: 200px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2); z-index: 10;
+}
+#controls h2 {
+  font-size: 13pt; color: #16213e; margin-bottom: 14px;
+  border-bottom: 2px solid #e94560; padding-bottom: 6px;
+}
+.control-group { margin-bottom: 14px; }
+.control-group > label {
+  display: block; font-size: 9pt; font-weight: bold;
+  text-transform: uppercase; color: #888;
+  margin-bottom: 6px; letter-spacing: 0.05em;
+}
+.button-group { display: flex; gap: 6px; }
+.basemap-btn {
+  flex: 1; padding: 6px; border: 2px solid #ccc;
+  border-radius: 4px; background: white; cursor: pointer;
+  font-size: 10pt; transition: all 0.2s;
+}
+.basemap-btn.active { border-color: #0f3460; background: #0f3460; color: white; }
+.layer-toggle { display: flex; align-items: center; gap: 8px; font-size: 10pt; }
+.layer-toggle input[type="checkbox"] { width: 16px; height: 16px; cursor: pointer; }
+.legend-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 10pt; }
+.legend-swatch { width: 18px; height: 18px; border-radius: 3px; flex-shrink: 0; }
+.legend-label { color: #333; }
+.maplibregl-popup-content { border-radius: 6px; padding: 14px; min-width: 180px; font-size: 10pt; }
+.maplibregl-popup-content h3 {
+  font-size: 11pt; color: #16213e; margin-bottom: 8px;
+  border-bottom: 1px solid #eee; padding-bottom: 4px;
+}
+.maplibregl-popup-content p { margin: 4px 0; color: #444; }
+.maplibregl-popup-content strong { color: #0f3460; }
