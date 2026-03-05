@@ -14,7 +14,7 @@ if not layer.isValid():
 
 filtered = processing.run("native:extractbyexpression", {
     'INPUT': layer,
-    'EXPRESSION': '"CreatedBy" = \'PM\'',
+    'EXPRESSION': "\"CreatedBy\" = 'PM'",
     'OUTPUT': 'TEMPORARY_OUTPUT'
 })['OUTPUT']
 
